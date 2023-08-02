@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Birthday wishes</title>
+<link rel="stylesheet" href="style.css">
+<script src="fabric.js"></script>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+</head>
+<body class="body_backgorund" onload="new_image()">
+	<center>
+		<br><br>
+		<canvas height="400" width="600" ></canvas>
+		#myCanvas
+		{
+			border-width: 10px;
+			background-colour: white;
+			border-style: ridge;
+			border-colour: darkviolet;
+		}
+
+
+function new_image()
+ {
+fabric.Image.fromURL('BirthdayImage.jpg', function(Img) {
+  player_object = Img;
+  player_object.scaleToWidth(700);
+  player_object.scaleToHeight(510);
+  player_object.set({
+top:0, 
+left:
+  });
+  canvas.add(block_image_object);
+    });
+}	
+
+		<br>
+	<button class="btn btn-warning btn-lg"
+	onclick="playSound()"> Dear Mandeep </button>	
+	</center>
+	<audio id="myAudio" src="bdayaudio.mp3"></audio>
+	<script src="main.js"></script>
+</body>
+</html>
